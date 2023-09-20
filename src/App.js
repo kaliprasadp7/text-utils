@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar title="Webdisk"/>
+      {/* <Navbar /> */}
+      <div className="container mt-5">
+        <label htmlFor="exampleFormControlTextarea1" className="form-label">Enter your Text here</label>
+        <textarea className="form-control mt-2" id="exampleFormControlTextarea1"  rows="8"></textarea>
+      </div>
+      <button className="btn btn-primary mt-3" >Change to UpperCase</button>
+
     </div>
   );
 }
